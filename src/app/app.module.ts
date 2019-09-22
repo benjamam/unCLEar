@@ -8,6 +8,8 @@ import { HeaderComponent } from './modules/header/header.component';
 import { FilterComponent } from './modules/home/components/filter/filter.component';
 import { ProposalComponent } from './modules/proposal.component';
 import { ContributeComponent } from './modules/contribute/contribute.component';
+import { DiscoverArtistsComponent } from './discover-artists/discover-artists.component';
+import { ArtistCardComponent } from './discover-artists/artist-card/artist-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ContributeComponent } from './modules/contribute/contribute.component';
     HeaderComponent,
     FilterComponent,
     ProposalComponent,
-    ContributeComponent
+    ContributeComponent,
+    DiscoverArtistsComponent,
+    ArtistCardComponent
   ],
   imports: [
     BrowserModule,
