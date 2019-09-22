@@ -1,5 +1,6 @@
 <div class="container">
     <form>
+        <h3>Tell us about your proposal</h3>
         <div class="form-group">
             <label for="exampleFormControlSelect1">I am a(n)</label>
             <select class="form-control" id="exampleFormControlSelect1">
@@ -18,9 +19,37 @@
             </select>
         </div>
         <div class="form-group">
+                <label for="exampleFormControlTextarea1">Location</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+        <div class="form-group">
             <label for="exampleFormControlTextarea1">Tell us about your idea!</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        
+        <label for="inputGroupFile02">Upload any files related to your proposal</label>
+        <div class="input-group mb-3">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+                    file</label>
+            </div>
+            <div class="input-group-append">
+                <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+            </div>
+        </div>
+        <br/>
+        <h3>How do we get a hold of you?</h3>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputTel1">Phone number</label>
+            <input type="tel" class="form-control" id="exampleInputTel1" aria-describedby="tel"
+            placeholder="1-(555)-555-5555">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
