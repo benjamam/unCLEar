@@ -8,6 +8,7 @@ import { ContributeComponent } from './modules/contribute/contribute.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { CardComponent } from './modules/home/components/card/card.component';
 import { FilterComponent } from './modules/home/components/filter/filter.component';
+import { ProjectComponent } from './modules/home/components/project/project.component';
 import { HomeComponent } from './modules/home/home.component';
 import { ProposalComponent } from './modules/proposal.component';
 
@@ -21,7 +22,8 @@ import { ProposalComponent } from './modules/proposal.component';
     ProposalComponent,
     ContributeComponent,
     DiscoverArtistsComponent,
-    ArtistCardComponent
+    ArtistCardComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
