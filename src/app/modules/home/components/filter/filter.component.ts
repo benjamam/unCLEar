@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterComponent implements OnInit {
 
+  filterType: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showSecondFilter(filterType: string) {
+    this.filterType = filterType;
   }
 
 }

@@ -5,9 +5,9 @@
             Sort by
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Location</a>
-            <a class="dropdown-item" href="#">Project Type</a>
-            <a class="dropdown-item" href="#">Artist</a>
+            <button class="dropdown-item" (click)="showSecondFilter('location')">Location</button>
+            <button class="dropdown-item" (click)="showSecondFilter('projType')">Project Type</button>
+            <button class="dropdown-item" (click)="showSecondFilter('artist')">Artist</button>
         </div>
     </div>
     <form class="form-inline">
