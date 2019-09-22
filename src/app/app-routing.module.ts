@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DiscoverArtistsComponent } from './discover-artists/discover-artists.component';
 import { ContributeComponent } from './modules/contribute/contribute.component';
+import { ProjectComponent } from './modules/home/components/project/project.component';
 import { HomeComponent } from './modules/home/home.component';
 import { ProposalComponent } from './modules/proposal.component';
-import {DiscoverArtistsComponent} from './discover-artists/discover-artists.component';
+
 
 const routes: Routes = [
   {
@@ -21,6 +23,10 @@ const routes: Routes = [
   {
     path: 'contribute',
     component: ContributeComponent
+  },
+  {
+    path: 'project/gordonsquare',
+    component: ProjectComponent
   },
   {
     path: '**',
