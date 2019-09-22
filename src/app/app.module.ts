@@ -7,6 +7,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { FilterComponent } from './modules/home/components/filter/filter.component';
 import { ProposalComponent } from './modules/proposal.component';
+import { ContributeComponent } from './modules/contribute/contribute.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProposalComponent } from './modules/proposal.component';
     HomeComponent,
     HeaderComponent,
     FilterComponent,
-    ProposalComponent
+    ProposalComponent,
+    ContributeComponent
   ],
   imports: [
     BrowserModule,
