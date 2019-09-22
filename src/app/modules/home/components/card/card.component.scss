@@ -1,0 +1,30 @@
+img{
+    width: 100%;
+    
+}
+.cards-content-container{
+    padding-top: 2rem;
+}
+
+.proj-img{
+    height: 350px;
+    padding-bottom: 35px;
+}
+
+.card-container {
+    position: relative;
+}
+
+.artist-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+
+    img{
+    border-radius: 30px;
+
+    }
+}
