@@ -12,4 +12,7 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
+  showProject(project: string){
+    console.log(project);
+  }
 }

@@ -1,17 +1,43 @@
 <nav class="navbar navbar-light bg-light">
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Sort by
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button class="dropdown-item" (click)="showSecondFilter('location')">Location</button>
-            <button class="dropdown-item" (click)="showSecondFilter('projType')">Project Type</button>
-            <button class="dropdown-item" (click)="showSecondFilter('artist')">Artist</button>
+    <div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort by
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" (click)="showSecondFilter('location')">Location</button>
+                <button class="dropdown-item" (click)="showSecondFilter('projType')">Project Type</button>
+                <button class="dropdown-item" (click)="showSecondFilter('artist')">Artist</button>
+            </div>
         </div>
+        <div class="dropdown" *ngIf="filterType==='location'">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pick a Location
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item">Cleveland</button>
+                <button class="dropdown-item">Ohio City</button>
+                <button class="dropdown-item">Tremont</button>
+            </div>
+        </div>
+        <div class="dropdown" *ngIf="filterType==='projType'">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pick a Project Type
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item">Mural</button>
+                <button class="dropdown-item">Installation</button>
+            </div>
+        </div>
+        <form class="form-inline" *ngIf="filterType==='artist'">
+            <input class="form-control mr-sm-2" type="search" placeholder="Find an artist" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 </nav>
