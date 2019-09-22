@@ -1,3 +1,18 @@
 .artist-row {
   border: 1px solid lightblue;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container, .btn-container {
+  align-items: center;
+  margin: auto;
+}
+
+.card-container{
+  width: 41%;
+}
+
+.subdesc{
+  font-size: 0.8rem;
 }
