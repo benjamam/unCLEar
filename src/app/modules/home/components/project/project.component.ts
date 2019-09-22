@@ -12,4 +12,8 @@ export class ProjectComponent implements OnInit {
   ngOnInit() {
   }
 
+  submit(){
+    alert('Thank you ')
+  }
+
 }

@@ -12,4 +12,7 @@ export class ProposalComponent implements OnInit {
   ngOnInit() {
   }
 
+  submitFunction() {
+    alert('Thank you ' + document.getElementById('name') + '! We will review your proposal and get back to you ASAP!');
+  }
 }

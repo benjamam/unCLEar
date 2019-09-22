@@ -11,6 +11,7 @@ import { FilterComponent } from './modules/home/components/filter/filter.compone
 import { ProjectComponent } from './modules/home/components/project/project.component';
 import { HomeComponent } from './modules/home/home.component';
 import { ProposalComponent } from './modules/proposal.component';
+import { SplashPageComponent } from './modules/home/components/splash-page/splash-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProposalComponent } from './modules/proposal.component';
     ContributeComponent,
     DiscoverArtistsComponent,
     ArtistCardComponent,
-    ProjectComponent
+    ProjectComponent,
+    SplashPageComponent
   ],
   imports: [
     BrowserModule,
