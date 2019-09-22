@@ -9,7 +9,7 @@ import { ProposalComponent } from './modules/proposal.component';
 
 const routes: Routes = [
   {
-    path: 'discover',
+    path: 'discover/projects',
     component: HomeComponent
   },
   {
@@ -25,7 +25,7 @@ const routes: Routes = [
     component: ContributeComponent
   },
   {
-    path: 'project/gordonsquare',
+    path: 'discover/projects/gordonsquare',
     component: ProjectComponent
   },
   {

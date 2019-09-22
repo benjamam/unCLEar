@@ -17,6 +17,6 @@ export class CardComponent implements OnInit {
 
   showProject(project: string){
     console.log('project/${project}');
-    this.router.navigate(['project/' + project]);
+    this.router.navigate(['discover/projects/' + project]);
   }
 }
