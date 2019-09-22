@@ -6,8 +6,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['discover']" [routerLinkActive]="['active']">Discover</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Discover
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['discover/projects']" [routerLinkActive]="['active']">Projects</a>
+                    <a class="dropdown-item" [routerLink]="['discover-artists']" [routerLinkActive]="['active']">Artists</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['propose']" [routerLinkActive]="['active']">Propose</a>
